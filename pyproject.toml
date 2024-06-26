@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "retriever-api"
+version = "0.1.0"
+description = ""
+authors = ["jotyy <jotyy318@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+denser-retriever = {git = "https://github.com/denser-org/denser-retriever.git", rev = "main"}
+fastapi = "^0.111.0"
+pydantic = "^2.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
